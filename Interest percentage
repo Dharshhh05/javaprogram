@@ -1,0 +1,26 @@
+package practice.java;
+import java.util.Scanner;
+public class Genderandage {
+    public static void main(String[]args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("M/F: ");
+        String gender=sc.nextLine(); 
+        System.out.print("age: ");
+        int age=sc.nextInt(); 
+        double interestPercentage=0.0;
+        if (gender.equalsIgnoreCase("Female")) {
+            if (age>=1 && age<=58) {
+                interestPercentage = 8.2; 
+            } else if(age>=59 && age<=100) {
+                interestPercentage = 9.2; 
+            }
+        } else if(gender.equalsIgnoreCase("Male")) {
+            if (age >=1 && age<=58) {
+                interestPercentage = 8.4; 
+            } else if (age >=59 && age<=100) {
+                interestPercentage=10.5;
+            }
+        }
+        System.out.printf("percentage interest: %.1f%%\n", interestPercentage);
+    }
+}
