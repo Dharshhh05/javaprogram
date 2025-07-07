@@ -1,0 +1,17 @@
+package practice.java;
+import java.util.Scanner;
+public class colourcode {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        String alphabet=sc.next().toUpperCase();
+        switch(alphabet)
+        {
+        case "G" -> System.out.print("Green");
+        case "R" -> System.out.print("Red");
+        case "B" -> System.out.print("Blue");
+        case "Y" -> System.out.print("Yellow");
+        case "W" -> System.out.print("White");
+        default -> System.out.print("Invalid");
+    }
+}
+}
