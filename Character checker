@@ -1,0 +1,17 @@
+package practice.java;
+import java.util.Scanner;
+public class charactercheck {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a single character: ");
+        char i=sc.next().charAt(0);
+        if(Character.isLetter(i)) {
+            System.out.println("Alphabhet"); 
+        } else if(Character.isDigit(i)) {
+            System.out.println("Digit"); 
+        } 
+        else{
+            System.out.println("Special Character"); 
+        }
+    }
+}
